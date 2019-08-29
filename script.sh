@@ -39,7 +39,7 @@ while test -n "$1"; do
         -s | --sort) ordenar=1 ;;
         -r | --reverse) inverter=1 ;;
         -u | --uppercase) maiusculas=1 ;;
-        -d | --delimiter) delimitador=$OPTARG ;;
+        -d | --delimiter) shift ; delimitador=$1 ;;
         -h | --help) echo "${MENSAGEM_USO}"
            exit 0
            ;;
